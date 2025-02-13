@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,54 +7,38 @@ body {
     color: #333;
 }
 
-/* Estilos del encabezado */
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-/* Estilos de la navegación */
-nav {
-    margin: 20px 0;
-    text-align: center;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos del contenedor principal */
+/* Contenedor principal */
 .container {
+    display: flex; /* Usamos flexbox para crear el layout */
+    align-items: center; /* Alinea verticalmente los elementos */
     max-width: 800px;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos del pie de página */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #007BFF;
-    color: white;
-    margin-top: 20px;
+/* Sección de la imagen */
+.image-section {
+    flex: 1; 
+    margin-right: 20px; 
 }
 
-footer p {
-    margin: 0;
+.image-section img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/* Sección del texto */
+.text-section {
+    flex: 2; 
+}
+
+.text-section h2 {
+    margin-top: 0;
+}
+
+.text-section p {
+    line-height: 1.6;
 }
